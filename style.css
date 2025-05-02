@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+select,
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.seats h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.seat {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seat:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.book-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff3d00;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.book-btn:hover {
+  background-color: #e53935;
+}
+
+.seat.selected {
+  background-color: #4caf50;
+  color: white;
+}
